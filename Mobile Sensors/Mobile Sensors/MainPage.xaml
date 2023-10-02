@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mobile_Sensors.MainPage"
+             BackgroundImageSource="gradient_aqua_marine.jpg">
+
+    <ScrollView VerticalScrollBarVisibility="Default">
+        <RelativeLayout Margin="20">
+            <!--Акселерометр-->
+            <Frame BackgroundColor="Black" x:Name="podloshka_Acselerometr" ScaleX="8.5" Opacity="0.36" ScaleY="2.8" CornerRadius="2"
+                   RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.45, Constant=0}"
+                   RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.08}"
+                   HasShadow="True"/>
+
+            <Image Source="acselerometr.png" x:Name="icon_Image" ScaleX="0.18" ScaleY="0.18"
+                   RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=-0.35, Constant=0}"
+                   RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=-0.12}"/>
+
+            <Label Text="Акселерометр" x:Name="LabelAcselerometr" FontSize="18" FontAttributes="Bold" TextColor="White"
+                   RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.38, Constant=0}"
+                   RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.045}"/>
+
+            <Label Text="" x:Name="znachAcselerometr" TextColor="Orange" FontSize="15" FontAttributes="Bold"
+                   RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.3, Constant=0}"
+                   RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.075}"/>
+
+            <!--Гироскоп-->
+            <Frame BackgroundColor="Black" x:Name="podloshka_Gyroscope" ScaleX="8.5" Opacity="0.36" ScaleY="2.8" CornerRadius="2"
+                   RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.45, Constant=0}"
+                   RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.30}"
+                   HasShadow="True"/>
+
+            <Image Source="gyroscope.png" x:Name="icon_Image1" ScaleX="0.18" ScaleY="0.18"
+                   RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=-0.35, Constant=0}"
+                   RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.095}"/>
+
+            <Label Text="Гироскоп" x:Name="LabelGyroscope" FontSize="18" FontAttributes="Bold" TextColor="White"
+                   RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.43, Constant=0}"
+                   RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.265}"/>
+
+            <Label Text="" x:Name="znachGyroscope" TextColor="Orange" FontSize="17" FontAttributes="Bold"
+                   RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.35, Constant=0}"
+                   RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.31}"/>
+
+            <!--Магнитометр-->
+            <Frame BackgroundColor="Black" x:Name="podloshka_Magnitometr" ScaleX="8.5" Opacity="0.36" ScaleY="2.8" CornerRadius="2"
+                   RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.45, Constant=0}"
+                   RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.52}"
+                   HasShadow="True"/>
+
+            <Image Source="magnetometer.png" x:Name="icon_Image2" ScaleX="0.18" ScaleY="0.18"
+                   RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=-0.35, Constant=0}"
+                   RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.32}"/>
+
+            <Label Text="Магнитометр" x:Name="LabelMagnitometr" FontSize="18" FontAttributes="Bold" TextColor="White"
+                   RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.38, Constant=0}"
+                   RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.485}"/>
+
+            <Label Text="" x:Name="znachMagnitometr" TextColor="Orange" FontSize="25" FontAttributes="Bold"
+                   RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.43, Constant=0}"
+                   RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.525}"/>
+
+            <!--Компас-->
+            <Image x:Name="compasImage" Source="compas.png" Scale="0.4"
+                   RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=-0.015, Constant=0}"
+                   RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.515}"/>
+
+            <Image x:Name="compasImage1" Source="arrow.png" Rotation="0" Scale="0.26"
+                   RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.34, Constant=0}"
+                   RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.485}"/>
+
+            <!--Справка-->
+            <Button x:Name="buttonHelp" ScaleX="0.70" ScaleY="0.70" Text="Справка" FontSize="17" FontAttributes="Bold" CornerRadius="10" BackgroundColor="DodgerBlue"
+                    RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.01, Constant=0}"
+                    RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.001}"/>
+            
+        </RelativeLayout>
+    </ScrollView>
+</ContentPage>
